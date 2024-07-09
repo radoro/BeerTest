@@ -28,7 +28,7 @@ namespace BeerAPI.Controllers
             }
         }
 
-        [HttpPost("biere")]
+        [HttpPost("AjoutBiere")]
         public IActionResult AjouterBiere([FromBody] Biere biere)
         {
             try
@@ -43,7 +43,7 @@ namespace BeerAPI.Controllers
             }
         }
 
-        [HttpDelete("biere/{idBiere}")]
+        [HttpDelete("DeleteBiere/{idBiere}")]
         public IActionResult SupprimerBiere(int idBiere)
         {
             try
